@@ -15,7 +15,7 @@ helm repo update
 
 Get ```values.yaml``` using ```helm show values dgraph/dgraph > values.yaml```
 
-Enable rutel in values.yaml
+Enable ratel in values.yaml
 
 ```shell
 kubectl create ns dgraph
@@ -30,7 +30,11 @@ helm install dgraph01 dgraph/dgraph -n dgraph -f .\values.yaml
 - alpha 8080 -> 8080
 - alpha 9080 -> 19080
 
-Display all forwared ports with ":portforwards"
+k9s :portforwards copied with c
+
+dgraph01-dgraph-ratel-598fd9b68f-m8rkt|dgraph01-dgraph-ratel|8000:8000
+dgraph01-dgraph-alpha-0|dgraph01-dgraph-alpha|19080:9080
+dgraph01-dgraph-alpha-0|dgraph01-dgraph-alpha|8080:8080
 
 ### Ratel UI
 
@@ -74,12 +78,12 @@ Query
 }
 ```
 
-## HelloWorld - dgraph sample "simple"
+## HelloWorld - dgraph-s example "simple"
 
-- [dgraph example simple](https://github.com/dgraph-io/dgraph-js/tree/master/examples/simple)
+- [github.com - dgraph-io - dgraph-js example "simple"](https://github.com/dgraph-io/dgraph-js/tree/master/examples/simple)
 
 - change grpc to @grpc/grpc-js (grpc deprecated)
-- change port to 19080
+- change port to 19080 in function newClientStub()
 
 ```js
 // Create a client stub.
