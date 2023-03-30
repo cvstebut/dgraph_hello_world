@@ -1,5 +1,7 @@
 # dgraph - JavaScript HelloWorld - based on dgraph sample simple
 
+Based on [github.com - dgraph-io - dgraph-js example "simple"](https://github.com/dgraph-io/dgraph-js/tree/master/examples/simple)
+
 ## Setup
 
 ### dgraph - Kubernetes - Rancher Desktop
@@ -36,11 +38,12 @@ Display all forwared ports with ":portforwards"
 http://localhost:8000
 ```
 
-choose "latest"
+choose ratel version "latest"
 
 Dgraph Server Connection: ```http://localhost:8080```, userid: groot, Password: password
+-> Continue
 
-Test dgraph using Console /
+Test dgraph using Console
 
 Mutatation
 
