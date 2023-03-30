@@ -32,9 +32,9 @@ helm install dgraph01 dgraph/dgraph -n dgraph -f .\values.yaml
 
 k9s :portforwards copied with c
 
-dgraph01-dgraph-ratel-598fd9b68f-m8rkt|dgraph01-dgraph-ratel|8000:8000
-dgraph01-dgraph-alpha-0|dgraph01-dgraph-alpha|19080:9080
-dgraph01-dgraph-alpha-0|dgraph01-dgraph-alpha|8080:8080
+>dgraph01-dgraph-ratel-598fd9b68f-m8rkt|dgraph01-dgraph-ratel|8000:8000
+>dgraph01-dgraph-alpha-0|dgraph01-dgraph-alpha|19080:9080
+>dgraph01-dgraph-alpha-0|dgraph01-dgraph-alpha|8080:8080
 
 ### Ratel UI
 
